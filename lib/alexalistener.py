@@ -12,8 +12,8 @@ import spcontroler
 
 
 #Keys for amazon cloud services
-access_key = "AKIAJBLV3ZJCFEMAAH2Q"
-access_secret = "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"
+access_key = "AKIAIIAVH652UEIILHRA"
+access_secret = "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"
 region ="us-east-1"
 queue_url = "https://sqs.us-east-1.amazonaws.com/724334165493/control_tasks"
 
