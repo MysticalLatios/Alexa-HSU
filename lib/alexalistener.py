@@ -1,8 +1,15 @@
 #Code modified from http://www.cyber-omelette.com/2017/01/alexa-run-script.html
 
+#Aws import
 import boto3
+
+#system imports
 import os
 import time
+
+#Our pachages imports
+import spcontroler
+
 
 #Keys for amazon cloud services
 access_key = "AKIAJBLV3ZJCFEMAAH2Q"
