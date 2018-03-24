@@ -18,6 +18,3 @@ def input_comp_1():
 
 def input_comp_2():
     pyautogui.click(685,485)
-
-
-click_power_on()
