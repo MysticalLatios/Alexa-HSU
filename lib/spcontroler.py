@@ -1,6 +1,8 @@
 #Import for our manipulation of the curson/keyboard
 import pyautogui
 
-pyautogui.moveTo(100, 150)
+def click_power_on():
+    pyautogui.click(340, 450)
 
-pyautogui.moveTo(200,200)
+def click_power_off():
+    pyautogui.click(380,450)
