@@ -33,7 +33,7 @@ waittime = 20
 client.set_queue_attributes(QueueUrl = queue_url, Attributes = {'ReceiveMessageWaitTimeSeconds': str(waittime)})
 
 time_start = time.time()
-while (time.time() - time_start < 60):
+while (time.time() - time_start < 300):
         print("Checking...")
         try:
                 message = pop_aws_que(client, queue_url)
