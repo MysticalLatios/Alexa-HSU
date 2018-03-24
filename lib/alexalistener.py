@@ -9,13 +9,14 @@ import time
 
 #Our pachages imports
 import spcontroler
+import secrets
 
 
 #Keys for amazon cloud services
-access_key = "AKIAIIAVH652UEIILHRA"
-access_secret = "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"
-region ="us-east-1"
-queue_url = "https://sqs.us-east-1.amazonaws.com/724334165493/control_tasks"
+access_key = secrets.access_key
+access_secret = secrets.access_secret
+region = secrets.region
+queue_url = secrets.queue_url
 
 def pop_aws_que(client, url):
     response = client.receive_message(QueueUrl = url, MaxNumberOfMessages = 8)
