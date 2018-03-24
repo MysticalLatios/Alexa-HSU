@@ -38,10 +38,8 @@ while (time.time() - time_start < 60):
                 message = pop_aws_que(client, queue_url)
                 print(message)
                 if message == "Pon":
-                        #Eventualy replace with calling the spcontroller
-                        print("ON!")
+                        spcontroler.click_power_on()
                 elif message == "Poff":
-                        #Eventualy replace with calling the spcontroller
-                        print("Off!")
+                        spcontroler.click_power_off()
         except:
             pass
