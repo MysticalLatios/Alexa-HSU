@@ -42,7 +42,7 @@ while (time.time() - time_start < 300):
                     spcontroler.click_power_on()
                 elif message == "Poff":
                     spcontroler.click_power_off()
-                elif message == "Deskstop":
+                elif message == "Desktop":
                     spcontroler.input_comp_1()
                 elif message == "Laptop":
                     spcontroler.input_comp_2()
