@@ -39,8 +39,12 @@ while (time.time() - time_start < 300):
                 message = pop_aws_que(client, queue_url)
                 print(message)
                 if message == "Pon":
-                        spcontroler.click_power_on()
+                    spcontroler.click_power_on()
                 elif message == "Poff":
-                        spcontroler.click_power_off()
+                    spcontroler.click_power_off()
+                elif message == "Dekstop":
+                    spcontroler.input_comp_1()
+                elif message == "Laptop":
+                    spcontroler.input_comp_2()
         except:
             pass
