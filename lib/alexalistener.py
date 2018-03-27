@@ -3,7 +3,6 @@
 #Aws import
 import boto3
 
-
 #system imports
 import os
 import time
@@ -13,7 +12,7 @@ import spcontroler
 import secrets
 
 
-#Keys for amazon cloud services
+#Keys for amazon cloud services, stored in an untracted file secrets.py
 access_key = secrets.access_key
 access_secret = secrets.access_secret
 region = secrets.region
